@@ -23,7 +23,7 @@
                             <div class="item__datos">
                                 <h2 class="item__nombre">{{ $fila['producto']->nombre }}</h2>
                                 <p class="item__precio">
-                                    ${{ number_format($fila['producto']->precio, 2) }} c/u
+                                    S/ {{ number_format($fila['producto']->precio, 2) }} c/u
                                 </p>
                             </div>
 
@@ -39,7 +39,7 @@
                                 <button class="boton boton--secundario" type="submit">Actualizar</button>
                             </form>
 
-                            <p class="item__subtotal">${{ number_format($fila['subtotal'], 2) }}</p>
+                            <p class="item__subtotal">S/ {{ number_format($fila['subtotal'], 2) }}</p>
                         </div>
                     @endforeach
                 </div>
@@ -53,7 +53,7 @@
                         </div>
                         <div class="resumen__fila resumen__fila--total">
                             <span>Total</span>
-                            <span>${{ number_format($total, 2) }} MXN</span>
+                            <span>S/ {{ number_format($total, 2) }}</span>
                         </div>
                     </div>
 

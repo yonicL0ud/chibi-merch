@@ -26,7 +26,7 @@
             </label>
 
             <label class="campo">
-                <span>Precio (MXN)</span>
+                <span>Precio (S/)</span>
                 <input type="number" name="precio" step="0.01" min="0"
                        value="{{ old('precio', $producto->precio) }}" required>
             </label>

@@ -19,7 +19,7 @@
                         <p class="tarjeta__descripcion">
                             {{ \Illuminate\Support\Str::limit($producto->descripcion, 70) }}
                         </p>
-                        <p class="tarjeta__precio">${{ number_format($producto->precio, 2) }} MXN</p>
+                        <p class="tarjeta__precio">S/ {{ number_format($producto->precio, 2) }}</p>
                         <p class="tarjeta__stock">Disponibles: {{ $producto->stock }}</p>
 
                         @if ($producto->stock > 0)

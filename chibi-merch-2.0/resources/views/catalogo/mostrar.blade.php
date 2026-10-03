@@ -11,7 +11,7 @@
 
             <div class="detalle__info">
                 <h1 class="detalle__titulo">{{ $producto->nombre }}</h1>
-                <p class="detalle__precio">${{ number_format($producto->precio, 2) }} MXN</p>
+                <p class="detalle__precio">S/ {{ number_format($producto->precio, 2) }}</p>
                 <p class="detalle__texto">{{ $producto->descripcion }}</p>
                 <p class="tarjeta__stock">Disponibles: {{ $producto->stock }}</p>
 

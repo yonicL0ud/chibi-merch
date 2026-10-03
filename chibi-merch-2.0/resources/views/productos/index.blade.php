@@ -31,7 +31,7 @@
                                      alt="{{ $producto->nombre }}">
                             </td>
                             <td>{{ $producto->nombre }}</td>
-                            <td>${{ number_format($producto->precio, 2) }}</td>
+                            <td>S/ {{ number_format($producto->precio, 2) }}</td>
                             <td>{{ $producto->stock }}</td>
                             <td class="tabla__acciones">
                                 <a href="{{ route('productos.edit', $producto->id) }}">Editar</a>
